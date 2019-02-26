@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传图片压缩并预览</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <style>
+       div#previewImg{
+           background: #eeeeee;
+           width: 400px;
+           height: 300px;
+           display: table-cell;
+           vertical-align: middle;
+           text-align: center;
+       }
+        #previewImg img{
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+        }
+        #upload{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ImgDemoContainer">
+                    <div class="form-group">
+                        <input type="file" class="form-control" id="upload" name="image"/>
+                    </div>
+                    <div id="previewImg">
+                        <img src="" id="viewImg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/imgDemo.js"></script>
+</html>
